@@ -1,0 +1,33 @@
+.search {
+  background-color: @basic-white;
+  text-align: center;
+  // padding: 33px 20px 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__wrapper {
+  width: 280px;
+  min-height: 205px;
+
+  @media (min-width:@tablet-width) {
+    width: 458px;
+    min-height: 202px;
+  }
+}
+
+.search__title {
+  font-size: 21px;
+  font-weight: 700;
+  color: @black;
+
+  @media (min-width:@tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.search__description {
+  color: @basic-gray;
+  line-height: 24px;
+}
