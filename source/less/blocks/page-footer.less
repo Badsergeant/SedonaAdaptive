@@ -7,6 +7,7 @@
 .page-footer__wrapper {
   display:flex;
   flex-direction: column;
+  justify-content: center;
 
   @media (min-width:@tablet-width) {
     flex-direction: row;
@@ -21,10 +22,12 @@
 }
 
 .page-footer__copyright {
+  max-width: 151px;
+  align-self: center;
   font-weight: 400;
   display: flex;
   justify-content: center;
-  column-gap: 5px;
+  column-gap: 15px;
 }
 
 .page-footer__social {
