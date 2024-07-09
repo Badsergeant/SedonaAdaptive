@@ -40,24 +40,41 @@
   margin-bottom: 0;
 }
 
-.form-field__label {
-  display: flex;
-
-}
-
 .form-field__label:not(.item-attractions):not(.item-impressions) {
   font-size: 14px;
   font-weight: 400;
 }
 
 .introduce-item__input {
-  flex-grow: 1;
   margin-left: 14px;
 }
 
-.item-contacts__label {
+.form-field__label {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
+.item-contacts__label {
+  margin-left: 22px;
+}
+
+.item-contacts__icon {
+  width: auto;
+}
+
+.item-impressions {
+  text-transform: none;
+  justify-content: normal; //пока так оставил,  в дальнейшей вёрстке мелких декоративными элементами доработаю
+}
+
+.item-impressions__input {
+  margin-right: 26px;
+}
+
+.item-attractions {
+  text-transform: none;
+}
+
+.item-attractions__input {
+  margin-right: 29px;
+}
