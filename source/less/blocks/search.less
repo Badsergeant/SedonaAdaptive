@@ -1,7 +1,7 @@
 .search {
   background-color: @basic-white;
   text-align: center;
-  // padding: 33px 20px 49px;
+  padding: 33px 20px 49px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +14,12 @@
   @media (min-width:@tablet-width) {
     width: 458px;
     min-height: 202px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {          //пока на скорую руку для "вида" вложил класс для поисковой группы , далее переделаю с миксом
+    margin-top: auto;
   }
 }
 
@@ -30,4 +36,8 @@
 .search__description {
   color: @basic-gray;
   line-height: 24px;
+
+  @media (min-width:@tablet-width) {
+
+  }
 }
