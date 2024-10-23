@@ -7,7 +7,7 @@
   text-align: center;
   min-width: 320px;
   @media (min-width:@tablet-width) {
-    padding: 0px 60px;
+    padding: 0px 40px;
   }
 }
 
@@ -69,6 +69,20 @@
     font-size: 21px;
   }
 }
+
+.form-field__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width:@tablet-width) {
+  .review__form-item:nth-child(4) .form-field__input-wrapper{
+    width: 484px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
 
 .review__form-item:nth-child(1) p {  // не уверен, что это правильно решение, освежу память - переделаю.
   @media (min-width:@tablet-width) {
