@@ -6,8 +6,12 @@
   font-weight: 700;
   text-align: center;
   min-width: 320px;
+  padding: 20px;
   @media (min-width:@tablet-width) {
-    padding: 0px 40px;
+   padding: 0px 60px;
+  }
+  @media (min-width:@desktop-width) {
+   padding: 0px 120px;
   }
 }
 
@@ -54,39 +58,56 @@
 .review__form-item {
   border: 0;
   margin: 0;
-  padding: 20px 20px 20px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-self: stretch;
+
+  @media (min-width:@tablet-width) {
+    padding-top: 0px;
+  }
+ /*  @media (min-width:@desktop-width) {
+    padding: 0px 80px 80px;
+  } */
 }
 
-
-//.form-field padding: 20px 0
-
-
-.form-field__title {
+.form-item__title {
   margin: 0 0 20px;
   @media (min-width:@tablet-width) {
     font-size: 21px;
+    margin-bottom: 50px;
   }
   @media (min-width:@desktop-width) {
     margin-bottom: 55px;
   }
 }
 
-.form-field__input-wrapper {
+.form-item__input-wrapper {
   display: flex;
   flex-direction: column;
+ }
+
+@media (min-width:@desktop-width) {
+.contacts-wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+ }
 }
 
 @media (min-width:@tablet-width) {
-  .review__form-item:nth-child(4) .form-field__input-wrapper{
-    width: 484px;
-    flex-wrap: wrap;
-    flex-direction: row;
+  .attractions-wrapper{
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 0px 100px;
   }
 }
 
+@media (min-width:@desktop-width) {
+  .attractions-wrapper {
+   flex-wrap: nowrap;
+   padding: 0px;
+ }
+}
 
 .review__form-item:nth-child(1) p {  // не уверен, что это правильно решение, освежу память - переделаю.
   @media (min-width:@tablet-width) {
@@ -94,26 +115,26 @@
   }
 }
 
-// .form-field__input-wrapper {
+// .form-item__input-wrapper {
 //   display:flex ;
 //   flex-direction: column;
 //   margin: auto;
 // }
 
-.form-field__item {
+.form-item__item {
   margin-bottom: 20px;
 }
 
-.form-field__label {
+.form-item__label {
   display: flex;
   flex-wrap: wrap;
 }
 
-.form-field__item:last-child {
+.form-item__item:last-child {
   margin-bottom: 0;
 }
 
-.form-field__label:not(.item-attractions):not(.item-impressions) {
+.footnote:not(.item-attractions):not(.item-impressions) {
   font-size: 14px;
   font-weight: 400;
 }
@@ -156,3 +177,31 @@
 .item-attractions__input {
   margin-right: 29px;
 }
+
+.item-emotions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-emotions__textarea {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.item-emotions__button {
+  width: 100%;
+   @media (min-width:@tablet-width) {
+    width: 50%;
+  }
+
+ }
+
+.item-emotions__label {
+  display:none;
+   @media (min-width:@tablet-width) {
+    display: block;
+    width: 50%;
+    text-align: right;
+ }
+}
+
