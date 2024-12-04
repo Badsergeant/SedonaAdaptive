@@ -10,7 +10,7 @@
   padding: 0;
   list-style: none;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 56px;
   background-color: @blue;
 
   //мелкийц декоративный элемент граница между элементами размером по 1px НЕ ЗАБЫТЬ
@@ -31,13 +31,28 @@
   font-weight:700;
   font-size: 18px;
   line-height: 40px;
+  border-top: 1px solid fade(@basic-white, 20%);
+  border-bottom: 1px solid fade(@black, 20%);
 
+  &:hover {
+    background-color: @deep-blue;
+  }
+
+  &:disabled {
+    background-color: @very-deep-blue;
+    color: fade(@basic-white, 30%);
+  }
   @media (min-width:@tablet-width) {
     color: @black;
     width: 153px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+    border: none;
+
+    &:hover {
+      background-color: @basic-white;
+    }
   }
 
   @media (min-width:@desktop-width) {
@@ -52,11 +67,85 @@
 }
 
 .main-nav__toggle {
-  @media (min-width:@tablet-width) {
-    display: none;
-  }
+  position: absolute;
+  right: 20px;
+  bottom: 17px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: @basic-white;
+  cursor: pointer;
+  border: none;
 
   @media (min-width:@tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__list-item {
+  display: block;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 4px;
+  background-color: @blue;
+  box-shadow: 0 9px 0 0 @blue , 0 18px 0 0 @blue;
+  }
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@blue, 60%);
+  box-shadow:
+    0 9px 0 0 fade(@blue, 60%),
+    0 18px 0 0 fade(@blue, 60%);
+}
+
+@media (max-width:@mobile-width-only) {
+  .main-nav--closed .main-nav__list-item {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  background-color: @blue;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 24px;
+    height: 4px;
+    background-color: @basic-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@basic-white, 60%);
   }
 }
