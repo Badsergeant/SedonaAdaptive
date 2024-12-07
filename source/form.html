@@ -11,31 +11,28 @@
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image page-header__logo-image--mini" src="/img/logotype-mobile.svg"  width="101.7" height="84" alt="Логотип Седона">
     </a>
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="page-header__nav main-nav main-nav--mini">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="#">html academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-      </div>
-    </nav>
-   </header>
+  <nav class="main-nav main-nav--closed">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="#">html academy</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+  </nav>
+ </header>
 
   <main class="page-main">
     <div class="promo promo--inner">
@@ -232,6 +229,23 @@
       </div>
     </div>
    </footer>
+   <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('.main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')
+      ) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+   </script>
   </body>
 
   </html>

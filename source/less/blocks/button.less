@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  padding: 0;
+  padding: 14.5px 0 17.5px;
+  font-weight: bold;
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  color: @basic-white;
+  text-transform: uppercase;
+  background-color: @blue;
+  width: 100%;
+
+  &:hover {
+    background-color: @deep-blue;
+  }
+
+  &:active {
+    background-color: @very-deep-blue;
+    color: fade(@basic-white, 30%);
+  }
+
+  &:disabled {
+   background-color: @dis-white;
+  }
+}

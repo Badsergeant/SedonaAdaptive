@@ -34,7 +34,8 @@
   border-top: 1px solid fade(@basic-white, 20%);
   border-bottom: 1px solid fade(@black, 20%);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: @deep-blue;
   }
 
@@ -50,8 +51,15 @@
     font-weight: 700;
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: @basic-white;
+      color: @blue;
+    }
+
+    &:active {
+      background-color: @basic-white;
+      color: fade(@black, 30%);
     }
   }
 
