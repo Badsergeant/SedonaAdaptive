@@ -56,6 +56,9 @@
 
   &:active {
     background-color: @very-deep-blue;
+    img {
+      opacity: 0.3;
+    };
   }
 }
 
@@ -63,4 +66,12 @@
   display: flex;
   align-self: center;
   color:@black;
+
+  svg path:hover{
+    fill: @blue;
+  }
+
+  svg:active {
+    opacity: 0.3;
+  }
 }
