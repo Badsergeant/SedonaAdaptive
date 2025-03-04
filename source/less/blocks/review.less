@@ -5,8 +5,6 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  min-width: 320px;
-  padding: 20px;
   @media (min-width:@tablet-width) {
    padding: 0px 60px;
   }
@@ -58,7 +56,7 @@
 .review__form-item {
   border: 0;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-self: stretch;
@@ -127,7 +125,6 @@
 
 .form-item__label {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .introduce-item__label {
@@ -135,28 +132,27 @@
 }
 
 .form-item__input {
-  min-height: 58px;
+  min-height: 58px;-
   padding: 0;
   border: none;
   background-color: @wrap-page;
-  font-weight: BOLD;
+  font-weight: bold;
   font-family: 'PT Sans';
   line-height: 26px;
   font-size: 18px;
-  padding-left: 22px;
 }
 
 .form-item__item:last-child {
   margin-bottom: 0;
 }
 
-.footnote:not(.item-attractions):not(.item-impressions) {
+.footnote {
   font-size: 14px;
   font-weight: 400;
 }
 
+
 .introduce-item__input {
-  margin-left: 14px;
   flex: 1;
 }
 
@@ -167,31 +163,6 @@
 
 .item-contacts__input {
   flex: 1;
-}
-
-.item-contacts__icon {
-  width: auto;
-}
-
-.item-impressions {
-  text-transform: none;
-  justify-content: normal; //пока так оставил,  в дальнейшей вёрстке мелких декоративными элементами доработаю
-}
-
-.item-impressions__input {
-  margin-right: 26px;
-}
-
-.item-attractions {
-  text-transform: none;
-  @media (min-width:@tablet-width) {
-    flex: 50%;
-  }
-
-}
-
-.item-attractions__input {
-  margin-right: 29px;
 }
 
 .item-emotions {

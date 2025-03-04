@@ -62,6 +62,7 @@
         Форма обратной связи
       </h2>
       <form class="review__form" action="https://echo.htmlacademy.ru" method="get">
+
        <fieldset class="review__form-item">
         <p class="form-item__title">
           Представьтесь:
@@ -69,19 +70,25 @@
         <div class="form-item__input-wrapper">
           <div class="form-item__item introduce-item">
             <label class="footnote form-item__label introduce-item__label">
-              имя*:
+              <span class="introduce-item__label-text">
+                имя*:
+              </span>
               <input class="form-item__input introduce-item__input">
             </label>
           </div>
           <div class="form-item__item introduce-item">
             <label class="footnote form-item__label introduce-item__label">
+              <span class="introduce-item__label-text">
               фамилия*:
+              </span>
               <input class="form-item__input introduce-item__input">
             </label>
           </div>
           <div class="form-item__item introduce-item">
             <label class="footnote form-item__label introduce-item__label">
+              <span class="introduce-item__label-text">
               отчество:
+              </span>
               <input class="form-item__input introduce-item__input">
             </label>
           </div>
@@ -92,7 +99,7 @@
         <p class="form-item__title">
           Контактная информация:
         </p>
-        <div class="form-item__input-wrapper contacts">
+        <div class="form-item__input-wrapper">
           <div class="form-item__item item-contacts">
             <label class="footnote form-item__label item-contacts__label">
               Контактный телефон*:
@@ -117,21 +124,21 @@
           ваше общее впечатление:
         </p>
         <div class="form-item__input-wrapper">
-          <div class="form-item__item item-impressions">
-            <label class="footnote form-item__label item-impressions">
-              <input type="radio" checked class="form-item__input item-impressions__input item-impressions__input--checked">
+          <div class="form-item__item impressions-item">
+            <label class="form-item__label item-impressions__label">
+              <input type="radio" name="radio-btn" class="form-item__input item-impressions__input item-impressions__input">
               <span class="item-impressions__option">Скорее положительное</span>
             </label>
           </div>
-          <div class="form-item__item item-impressions">
-            <label class="footnote form-item__label item-impressions">
-              <input type="radio" class="form-item__input item-impressions__input">
+          <div class="form-item__item impressions-item">
+            <label class="form-item__label item-impressions__label">
+              <input type="radio" name="radio-btn" class="form-item__input item-impressions__input">
               <span class="item-impressions__option">Скорее отрицательное</span>
             </label>
           </div>
-          <div class="form-item__item item-impressions">
-            <label class="footnote form-item__label item-impressions">
-              <input type="radio" class="form-item__input item-impressions__input">
+          <div class="form-item__item impressions-item">
+            <label class="form-item__label item-impressions__label">
+              <input type="radio" name="radio-btn" class="form-item__input item-impressions__input">
               <span class="item-impressions__option">Затрудняюсь ответить</span>
             </label>
           </div>
@@ -145,25 +152,25 @@
         </p>
         <div class="form-item__input-wrapper attractions-wrapper">
           <div class="form-item__item item-attractions">
-            <label class="footnote form-item__label item-attractions">
+            <label class="form-item__label item-attractions">
               <input type="checkbox" checked class="form-item__input item-attractions__input item-attractions__input--checked">
               <span class="item-attractions__option">Мост Дьявола</span>
             </label>
           </div>
           <div class="form-item__item item-attractions">
-            <label class="form-item__label item-attractions footnote">
+            <label class="form-item__label item-attractions">
               <input type="checkbox" checked class="form-item__input item-attractions__input item-attractions__input--checked">
               <span class="item-attractions__option">Гора-Колокол</span>
             </label>
           </div>
           <div class="form-item__item item-attractions">
-            <label class="form-item__label item-attractions footnote">
+            <label class="form-item__label item-attractions">
               <input type="checkbox" checked class="form-item__input item-attractions__input item-attractions__input--checked">
               <span class="item-attractions__option">Слайд-парк</span>
             </label>
           </div>
           <div class="form-item__item item-attractions">
-            <label class="form-item__label item-attractions footnote">
+            <label class="form-item__label item-attractions">
               <input type="checkbox" class="form-item__input item-attractions__input">
               <span class="item-attractions__option">Красные скалы</span>
             </label>
