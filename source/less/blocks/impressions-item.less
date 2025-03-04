@@ -1,23 +1,23 @@
-.item-impressions__label {
+.impressions-item__label {
   text-transform: none;
   justify-content: normal; //пока так оставил,  в дальнейшей вёрстке мелких декоративными элементами доработаю
 }
 
-.item-impressions__input {
+.impressions-item__input {
   position: absolute;
   z-index: -1;
   opacity: 1;
 
 }
 
-.item-impressions__option {
+.impressions-item__option {
   display: inline-flex;
   align-items: center;
   position: relative;
 }
 
 
-.item-impressions__option::before {
+.impressions-item__option::before {
   content: "";
   width: 48px;
   height: 48px;
@@ -27,7 +27,7 @@
   border: none;
  }
 
- .item-impressions__input:checked+span::after {
+ .impressions-item__input:checked+span::after {
   content: "";
   position: absolute;
   top: 16px;
