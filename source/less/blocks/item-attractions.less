@@ -7,7 +7,28 @@
 }
 
 .attractions-item__input {
+  display: none;
+}
+
+.attractions-item__option {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.attractions-item__option::before {
+  content: "";
+  width: 51px;
+  height: 51px;
+  margin-right: 25px;
+  background-color: @wrap-page;
+  border-radius: 7px;
+}
+
+.attractions-item__input:checked + span::after {
+  content: url(../../img/tick.svg);
   position: absolute;
-  z-index: 0;
-  opacity: 0;
+  width: 23.13px;
+  height: 16.23px;
+  left: 17px;
 }

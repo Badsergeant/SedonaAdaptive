@@ -4,10 +4,11 @@
 }
 
 .impressions-item__input {
-  position: absolute;
+  /* position: absolute;
   z-index: -1;
   opacity: 1;
-
+ */
+ display: none;
 }
 
 .impressions-item__option {
@@ -19,8 +20,8 @@
 
 .impressions-item__option::before {
   content: "";
-  width: 48px;
-  height: 48px;
+  width: 53px;
+  height: 53px;
   border-radius: 50%;
   margin-right: 20px;
   background-color: @wrap-page;
@@ -30,10 +31,10 @@
  .impressions-item__input:checked+span::after {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 16px;
-  height: 16px;
+  top: 18px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
   background-color: @basic-gray;
   border-radius: 50%;
 }
