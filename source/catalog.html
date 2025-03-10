@@ -13,31 +13,28 @@
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image page-header__logo-image--mini" src="/img/logotype-mobile.svg"  width="101.7" height="84" alt="Логотип Седона">
     </a>
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="page-header__nav main-nav main-nav--mini">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--mini">
-            <a href="#">html academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-      </div>
-    </nav>
-   </header>
+  <nav class="main-nav main-nav--closed">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="#">html academy</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+  </nav>
+ </header>
 
   <main class="page-main">
 
@@ -46,20 +43,22 @@
         <img class="promo__pic" src="/img/SEDONA.svg" width="229" height="39" alt="Седона">
       </div>
     </div>
-    <section class="content-header">
+    <header class="content-header content-header--inner">
       <h1 class="visually-hidden">
         Фото и видео достопримечательностей
       </h1>
-      <p class="content-header__title">
-        Фото и видео
-      </p>
-      <p class="content-header__description">
-        Не можете решиться на путешествие из-за <br>
-        курса? Фотографии помогут вам забыть о <br>
-        политике и экономике.
-      </p>
-    </section>
-
+      <div class="content-header__text-wrapper">
+        <p class="content-header__title content-header__title--inner">
+          Фото и видео
+        </p>
+        <p class="content-header__description content-header__description--inner">
+          Не можете решиться на путешествие из-за <br>
+          курса? Фотографии помогут вам забыть о <br>
+          политике и экономике.
+        </p>
+      </div>
+    </header>
+  <div class="photo-section-wrap">
     <section class="authors-photo">
       <h2 class="visually-hidden">
         Обзор достопримечательностей
@@ -137,7 +136,7 @@
       в очередной раз!
      </p>
      <article class="presentation__video-content video-player">
-       <img class="video-player__img" src="./img/video-mobile.svg" width="320" height="201" alt="Автомобили на дороге на фоне гор">
+       <img class="video-player__img" src="./img/video-mobile.svg" alt="Автомобили на дороге на фоне гор">
 
        <div class="video-player__controls">
 
@@ -164,7 +163,7 @@
 
       </article>
     </section>
-
+  </div>
   </main>
 
   <footer class="page-footer">
@@ -178,19 +177,19 @@
         <ul class="social__list">
           <li class="social__list-item">
             <a class="social__link social__link--twitter" href="#">
-              Мы в Твиттере
+              <img src="./img/icon-twitter.svg" width="17.5" height="14.57">
             </a>
           </li>
 
           <li class="social__list-item">
             <a class="social__link social__link--facebook" href="#">
-              Мы в Фейсбуке
+              <img src="./img/icon-facebook.svg" width="8.7" height="18.9">
             </a>
           </li>
 
           <li class="social__list-item">
             <a class="social__link social__link--youtube" href="#">
-              Мы в Ютубе
+              <img src="./img/icon-youtube.svg " width="19.91" height="14">
             </a>
           </li>
         </ul>
@@ -200,12 +199,29 @@
           Разработано
         </p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span>HTML Academy</span>
-          <img src="/img/htmlacademy.svg" alt="Логотип HTML Academy" width="26.9" height="34.1">
+          <span class="visually-hidden">HTML Academy</span>
+          <img src="./img/htmlacademy (2).svg" alt="Логотип HTML Academy" width="26.9" height="34.1">
         </a>
       </div>
     </div>
    </footer>
+   <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('.main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')
+      ) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+   </script>
 </body>
 
 </html>

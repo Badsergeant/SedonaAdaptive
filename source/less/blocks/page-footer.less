@@ -7,6 +7,7 @@
 .page-footer__wrapper {
   display:flex;
   flex-direction: column;
+  justify-content: center;
 
   @media (min-width:@tablet-width) {
     flex-direction: row;
@@ -21,10 +22,12 @@
 }
 
 .page-footer__copyright {
+  max-width: 151px;
+  align-self: center;
   font-weight: 400;
   display: flex;
   justify-content: center;
-  column-gap: 5px;
+  column-gap: 15px;
 }
 
 .page-footer__social {
@@ -46,10 +49,29 @@
   height: 48px;
   background-color:@blue;
   align-items: center;
+
+  &:hover {
+    background-color: @deep-blue;
+  }
+
+  &:active {
+    background-color: @very-deep-blue;
+    img {
+      opacity: 0.3;
+    };
+  }
 }
 
 .copyright__link {
   display: flex;
   align-self: center;
   color:@black;
+
+  svg path:hover{
+    fill: @blue;
+  }
+
+  svg:active {
+    opacity: 0.3;
+  }
 }

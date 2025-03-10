@@ -1,8 +1,18 @@
 .location {
   background-color: @basic-white;
   display: flex;
+
+  @media (min-width:@tablet-width) {
+    flex-direction: column;
+   }
 }
 
-.map {
-  max-width: 320px;
+.location__item-map { //пока задал минимальную высоту
+  display: flex;
+  min-height: 350px;
+
+
+  @media (min-width:@tablet-width) { // не знаю как растянуть карту, позже доделаю
+    flex-direction: column;
+   }
 }

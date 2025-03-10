@@ -28,7 +28,16 @@
 }
 
 .features__list-item-text-wrapper {
-  padding: 26px;
+  margin: auto;
+
+  @media (min-width:@tablet-width) {
+    max-width: 158px;
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 300px;
+  }
+
 }
 
 .features__list-item:not(:nth-child(6)) {
@@ -43,6 +52,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     flex-direction: row;
+    align-content: center;
   }
 }
 
