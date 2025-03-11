@@ -50,6 +50,11 @@
       grid-row: ~"4/5";
     }
   }
+
+  @media (min-width:@desktop-width) {
+     /* grid-template-rows: 374px 207px 202px 347px; */
+     grid-template-rows: 2fr repeat(2,1fr) 2fr;
+  }
 }
 
 
