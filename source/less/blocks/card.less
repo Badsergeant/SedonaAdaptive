@@ -1,8 +1,15 @@
 .card {
-  font-style: italic;
   font-size: 14px;
   line-height: 24px;
   padding: 22px 20px 15px;
+
+  @media (min-width:@tablet-width) {
+    padding: 0;
+  }
+ /*  background-color: @basic-white;
+  @media (min-width:@desktop-width) {
+      background-color: @basic-white;
+ } */
 }
 
 .card__image {
@@ -17,6 +24,17 @@
 .card__description {
   font-weight: 400;
   color: @basic-gray;
+}
+
+.card__wrapper-button {
+  display: flex;
+}
+
+.card__button {
+  border: none;
+  background-color: transparent;
+  width: auto;
+  margin-right: 14px;
 }
 
 .card__like-counter {
