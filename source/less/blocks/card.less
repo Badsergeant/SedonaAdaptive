@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 24px;
   padding: 22px 20px 15px;
-
+  position: relative;
   @media (min-width:@tablet-width) {
     padding: 0;
   }
@@ -13,12 +13,17 @@
 }
 
 .card__image {
-  margin-bottom: 11px;
+  object-fit: cover;
 }
 
-/* .card__wrapper-text {
-
-} */
+@media (min-width:@desktop-width) {
+  .card__wrapper-userinfo {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
 
 .card__title {
  font-weight: 700;
