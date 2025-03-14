@@ -2,26 +2,23 @@
   font-size: 14px;
   line-height: 24px;
   padding: 22px 20px 15px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
+
   @media (min-width:@tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0;
   }
-}
-
-@media (min-width:@tablet-width) {
-  .card__wrapper-text {
-    padding-left: 21px;
-  }
+ /*  background-color: @basic-white;
+  @media (min-width:@desktop-width) {
+      background-color: @basic-white;
+ } */
 }
 
 .card__image {
-  object-fit: cover;
+  margin-bottom: 11px;
 }
+
+/* .card__wrapper-text {
+
+} */
 
 .card__title {
  font-weight: 700;
@@ -35,10 +32,6 @@
 
 .card__wrapper-button {
   display: flex;
-  @media (min-width:@tablet-width) {
-    align-self: center;
-  }
-  padding-right: 21px;
 }
 
 .card__button {
