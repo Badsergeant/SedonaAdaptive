@@ -1,31 +1,35 @@
 .promo {
-  display: flex;
-  flex-direction: column;
   background-image: url(../../img/back-desktop.jpg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 52px 0 0;
+/*   background-position: center;
+  background-size: cover; */
+  object-fit: cover;
+  background-position: center -40px;
+  padding: 90px 0 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
+/*   overflow: hidden; */
+/*   z-index: -1; */
 
   @media (min-width:@tablet-width) {
-    padding-top: 95px;
+    padding-top: 77px;
+    background-position: center;
   }
 }
 
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .promo__pic {
-  height: 39px;
-  margin-bottom: 10px;
+  height: 214px;
+  margin-bottom: 28px;
   @media (min-width:@tablet-width) {
-     height: 78px;
-     margin-bottom: 60px;
+     height: 350px;
+     margin-bottom: 34px;
   }
   @media (min-width:@desktop-width) {
-    height: 79.8;
-     margin-bottom: 63.2px;
+    margin-bottom: 33px;
   }
 }
 
