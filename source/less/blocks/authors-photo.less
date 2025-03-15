@@ -3,18 +3,17 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
   margin: 0;
 
   @media (min-width:@tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 480px ,repeat(2,347px);
+    grid-template-rows: 480px repeat(2,1fr);
   }
   @media (min-width:@desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px, 267px, 1fr;
+    grid-template-rows: 400px 267px;
   }
 }
 @media (min-width:@tablet-width) {
