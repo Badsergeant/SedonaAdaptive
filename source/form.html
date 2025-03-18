@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Город Седона</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image page-header__logo-image--mini" src="/img/logotype-mobile.svg"  width="101.7" height="84" alt="Логотип Седона">
+      <img class="page-header__logo-image page-header__logo-image--mini" src="/img/logotype-mobile.svg" width="101.7"
+        height="84" alt="Логотип Седона">
     </a>
-  <nav class="main-nav main-nav--closed">
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="#">html academy</a>
-        </li>
-      </ul>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-  </nav>
- </header>
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">html academy</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
   <main class="page-main">
     <div class="promo promo--inner">
@@ -64,137 +67,138 @@
       </h2>
       <form class="review__form" action="https://echo.htmlacademy.ru" method="get">
 
-       <fieldset class="review__form-item">
-        <p class="form-item__title">
-          Представьтесь:
-        </p>
-        <div class="form-item__input-wrapper">
-          <div class="form-item__item introduce-item">
-            <label class="footnote form-item__label introduce-item__label">
-              <span class="introduce-item__label-text">
-                имя*:
-              </span>
-              <input class="form-item__input introduce-item__input">
-            </label>
+        <fieldset class="review__form-item">
+          <p class="form-item__title">
+            Представьтесь:
+          </p>
+          <div class="form-item__input-wrapper">
+            <div class="form-item__item introduce-item">
+              <label class="footnote form-item__label introduce-item__label">
+                <span class="introduce-item__label-text">
+                  имя*:
+                </span>
+                <input class="form-item__input introduce-item__input">
+              </label>
+            </div>
+            <div class="form-item__item introduce-item">
+              <label class="footnote form-item__label introduce-item__label">
+                <span class="introduce-item__label-text">
+                  фамилия*:
+                </span>
+                <input class="form-item__input introduce-item__input">
+              </label>
+            </div>
+            <div class="form-item__item introduce-item">
+              <label class="footnote form-item__label introduce-item__label">
+                <span class="introduce-item__label-text">
+                  отчество:
+                </span>
+                <input class="form-item__input introduce-item__input">
+              </label>
+            </div>
           </div>
-          <div class="form-item__item introduce-item">
-            <label class="footnote form-item__label introduce-item__label">
-              <span class="introduce-item__label-text">
-              фамилия*:
-              </span>
-              <input class="form-item__input introduce-item__input">
-            </label>
-          </div>
-          <div class="form-item__item introduce-item">
-            <label class="footnote form-item__label introduce-item__label">
-              <span class="introduce-item__label-text">
-              отчество:
-              </span>
-              <input class="form-item__input introduce-item__input">
-            </label>
-          </div>
-        </div>
-       </fieldset>
+        </fieldset>
 
-       <fieldset class="review__form-item contacts">
-        <p class="form-item__title">
-          Контактная информация:
-        </p>
-        <div class="form-item__input-wrapper contacts-wrapper">
-          <div class="form-item__item item-contacts">
-            <label class="footnote form-item__label item-contacts__label item-contacts__label-tel">
-              <span class="item-contacts__label-text">
-              Контактный телефон*:
-              </span>
-              <input class="form-item__input item-contacts__input">
-              <!-- <img class="item-contacts__icon" src="/img/" width="18" height="18" alt="Иконка телефона">  Пока думал как лучше реальизовать,
+        <fieldset class="review__form-item contacts">
+          <p class="form-item__title">
+            Контактная информация:
+          </p>
+          <div class="form-item__input-wrapper contacts-wrapper">
+            <div class="form-item__item item-contacts">
+              <label class="footnote form-item__label item-contacts__label item-contacts__label-tel">
+                <span class="item-contacts__label-text">
+                  Контактный телефон*:
+                </span>
+                <input class="form-item__input item-contacts__input">
+                <!-- <img class="item-contacts__icon" src="/img/" width="18" height="18" alt="Иконка телефона">  Пока думал как лучше реальизовать,
               отвлекся от главной задачи по настройке адапитвной сетки, оставил на потм при работе с мелкими декоративными элементами доделаю-->
-            </label>
-          </div>
-          <div class="form-item__item item-contacts">
-            <label class="footnote form-item__label item-contacts__label item-contacts__label-mail">
-              <span class="item-contacts__label-text">
-              Электронная почта*:
-              </span>
-              <input class="form-item__input item-contacts__input">
-              <!-- <img class="item-contacts__icon" src="/img/mail.svg.svg" width="16" height="12" alt="Иконка письма">  Пока думал как лучше реальизовать,
+              </label>
+            </div>
+            <div class="form-item__item item-contacts">
+              <label class="footnote form-item__label item-contacts__label item-contacts__label-mail">
+                <span class="item-contacts__label-text">
+                  Электронная почта*:
+                </span>
+                <input class="form-item__input item-contacts__input">
+                <!-- <img class="item-contacts__icon" src="/img/mail.svg.svg" width="16" height="12" alt="Иконка письма">  Пока думал как лучше реальизовать,
               отвлекся от главной задачи по настройке адапитвной сетки, оставил на потм при работе с мелкими декоративными элементами доделаю-->
-            </label>
+              </label>
+            </div>
           </div>
-        </div>
-       </fieldset>
+        </fieldset>
 
-       <fieldset class="review__form-item">
-        <p class="form-item__title">
-          ваше общее впечатление:
-        </p>
-        <div class="form-item__input-wrapper">
-          <div class="form-item__item impressions-item">
-            <label class="form-item__label impressions-item__label">
-              <input type="radio" name="radio-btn" class="form-item__input impressions-item__input">
-              <span class="impressions-item__option">Скорее положительное</span>
-            </label>
+        <fieldset class="review__form-item">
+          <p class="form-item__title">
+            ваше общее впечатление:
+          </p>
+          <div class="form-item__input-wrapper">
+            <div class="form-item__item impressions-item">
+              <label class="form-item__label impressions-item__label">
+                <input type="radio" name="radio-btn" class="form-item__input impressions-item__input">
+                <span class="impressions-item__option">Скорее положительное</span>
+              </label>
+            </div>
+            <div class="form-item__item impressions-item">
+              <label class="form-item__label impressions-item__label">
+                <input type="radio" name="radio-btn" class="form-item__input impressions-item__input">
+                <span class="impressions-item__option">Скорее отрицательное</span>
+              </label>
+            </div>
+            <div class="form-item__item impressions-item">
+              <label class="form-item__label impressions-item__label">
+                <input type="radio" name="radio-btn" class="form-item__input impressions-item__input">
+                <span class="impressions-item__option">Затрудняюсь ответить</span>
+              </label>
+            </div>
           </div>
-          <div class="form-item__item impressions-item">
-            <label class="form-item__label impressions-item__label">
-              <input type="radio" name="radio-btn" class="form-item__input impressions-item__input">
-              <span class="impressions-item__option">Скорее отрицательное</span>
-            </label>
-          </div>
-          <div class="form-item__item impressions-item">
-            <label class="form-item__label impressions-item__label">
-              <input type="radio" name="radio-btn" class="form-item__input impressions-item__input">
-              <span class="impressions-item__option">Затрудняюсь ответить</span>
-            </label>
-          </div>
-        </div>
-       </fieldset>
+        </fieldset>
 
-       <fieldset class="review__form-item attractions">
-        <p class="form-item__title attractions__title">
-          посещенные
-          достопримечательности:
-        </p>
-        <div class="form-item__input-wrapper attractions-wrapper">
-          <div class="form-item__item attractions-item">
-            <label class="form-item__label attractions-item__label">
-              <input type="checkbox" checked class="form-item__input attractions-item__input">
-              <span class="attractions-item__option">Мост Дьявола</span>
-            </label>
+        <fieldset class="review__form-item attractions">
+          <p class="form-item__title attractions__title">
+            посещенные
+            достопримечательности:
+          </p>
+          <div class="form-item__input-wrapper attractions-wrapper">
+            <div class="form-item__item attractions-item">
+              <label class="form-item__label attractions-item__label">
+                <input type="checkbox" checked class="form-item__input attractions-item__input">
+                <span class="attractions-item__option">Мост Дьявола</span>
+              </label>
+            </div>
+            <div class="form-item__item attractions-item">
+              <label class="form-item__label attractions-item__label">
+                <input type="checkbox" checked class="form-item__input attractions-item__input">
+                <span class="attractions-item__option">Гора-Колокол</span>
+              </label>
+            </div>
+            <div class="form-item__item attractions-item">
+              <label class="form-item__label attractions-item__label">
+                <input type="checkbox" checked class="form-item__input attractions-item__input">
+                <span class="attractions-item__option">Слайд-парк</span>
+              </label>
+            </div>
+            <div class="form-item__item attractions-item">
+              <label class="form-item__label attractions-item__label">
+                <input type="checkbox" class="form-item__input attractions-item__input">
+                <span class="attractions-item__option">Красные скалы</span>
+              </label>
+            </div>
           </div>
-          <div class="form-item__item attractions-item">
-            <label class="form-item__label attractions-item__label">
-              <input type="checkbox" checked class="form-item__input attractions-item__input">
-              <span class="attractions-item__option">Гора-Колокол</span>
-            </label>
-          </div>
-          <div class="form-item__item attractions-item">
-            <label class="form-item__label attractions-item__label">
-              <input type="checkbox" checked class="form-item__input attractions-item__input">
-              <span class="attractions-item__option">Слайд-парк</span>
-            </label>
-          </div>
-          <div class="form-item__item attractions-item">
-            <label class="form-item__label attractions-item__label">
-              <input type="checkbox" class="form-item__input attractions-item__input">
-              <span class="attractions-item__option">Красные скалы</span>
-            </label>
-          </div>
-        </div>
-       </fieldset>
+        </fieldset>
 
-       <fieldset class="review__form-item">
-        <p class="form-item__title">
-          Опишите свои эмоции:
-        </p>
-        <div class="form-item__input-wrapper">
-          <div class="form-item__item item-emotions">
-            <textarea class="item-emotions__textarea" name="" id="" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-            <button class="button item-emotions__button">отправить отзыв</button>
-            <span class="item-emotions__label footnote">* — обязательные поля</span>
+        <fieldset class="review__form-item">
+          <p class="form-item__title">
+            Опишите свои эмоции:
+          </p>
+          <div class="form-item__input-wrapper">
+            <div class="form-item__item item-emotions">
+              <textarea class="item-emotions__textarea" name="" id="" cols="30" rows="5"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+              <button class="button item-emotions__button">отправить отзыв</button>
+              <span class="item-emotions__label footnote">* — обязательные поля</span>
+            </div>
           </div>
-        </div>
-       </fieldset>
+        </fieldset>
 
       </form>
     </section>
@@ -238,24 +242,24 @@
         </a>
       </div>
     </div>
-   </footer>
-   <script>
+  </footer>
+  <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
 
-      navMain.classList.remove('.main-nav--nojs');
+    navMain.classList.remove('.main-nav--nojs');
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')
       ) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-   </script>
-  </body>
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+</body>
 
-  </html>
+</html>
