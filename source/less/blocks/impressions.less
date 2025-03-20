@@ -1,0 +1,23 @@
+.impressions {
+  border-right: 1px solid @dis-white;
+}
+
+.impressions__title {
+  @media (min-width:@tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.impressions-wrapper {
+  @media (min-width:@tablet-width) {
+    min-height: 202px;
+    justify-content: space-between;
+  }
+}
+
+/* .impressions-item__label {
+  height: 48px;
+} */

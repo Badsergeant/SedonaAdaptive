@@ -21,7 +21,7 @@
   @media (min-width:@tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: 292px repeat(3,1fr);
     justify-items: center;
 
     .review__form-item:nth-child(1) {
@@ -84,16 +84,38 @@
   top: 0;
   left: -20px;
   background-color: @dis-white;
+
+  @media (min-width:@tablet-width) {
+   display: none;
+  }
 }
 
 .form-item__title {
   margin: 0 0 20px;
+  position: relative;
 
   @media (min-width:@tablet-width) {
     font-size: 21px;
     margin-bottom: 50px;
     width: 308px;
     align-self: center;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 123px;
+      height: 1px;
+      background-color: @dis-white;
+      position: absolute;
+      top: 50%;
+    }
+
+    &::before {
+      left: -183px;
+      }
+    &::after {
+      right: -183px;
+      }
   }
   @media (min-width:@desktop-width) {
     margin-bottom: 55px;
