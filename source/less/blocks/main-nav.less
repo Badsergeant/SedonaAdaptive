@@ -39,7 +39,7 @@
     background-color: @deep-blue;
   }
 
-  &:disabled {
+  &:active {
     background-color: @very-deep-blue;
     color: fade(@basic-white, 30%);
   }
@@ -114,11 +114,19 @@
   box-shadow: 0 9px 0 0 @blue , 0 18px 0 0 @blue;
   }
 
-.main-nav--closed .main-nav__toggle:active::before {
+.main-nav--closed .main-nav__toggle {
+&:hover::before {
   background-color: fade(@blue, 60%);
   box-shadow:
     0 9px 0 0 fade(@blue, 60%),
     0 18px 0 0 fade(@blue, 60%);
+ }
+ &:active::before {
+  background-color: fade(@blue, 30%);
+  box-shadow:
+    0 9px 0 0 fade(@blue, 30%),
+    0 18px 0 0 fade(@blue, 30%);
+ }
 }
 
 @media (max-width:@mobile-width-only) {
@@ -129,7 +137,7 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 17px;
-  background-color: @blue;
+  background-color: transparent;
 
   &::before,
   &::after {
