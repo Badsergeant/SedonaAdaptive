@@ -52,7 +52,6 @@
   }
 
   @media (min-width:@desktop-width) {
-     /* grid-template-rows: 374px 207px 202px 347px; */
      grid-template-rows: 294px repeat(2,1fr) 396px;
   }
 }
@@ -71,26 +70,6 @@
   @media (min-width:@tablet-width) {
     padding: 0;
   }
- /*  @media (min-width:@desktop-width) {
-    padding: 0px 80px 80px;
-  } */
-}
-
-/*Надо переработать правило
-с псевдоэлементами из-за слишком большой вложенности
-и сложности читания правила !!!*/
-.review__form-item::before {
-  content: '';
-  position: absolute;
-  width: 115%;
-  height: 1px;
-  top: 0;
-  left: -20px;
-  background-color: @dis-white;
-
-  @media (min-width:@tablet-width) {
-   display: none;
-  }
 }
 
 .form-item__title {
@@ -102,37 +81,44 @@
     margin-bottom: 50px;
     width: 308px;
     align-self: center;
+ }
+}
 
-    &::before,
-    &::after {
-      content: '';
-      width: 123px;
-      height: 1px;
-      background-color: @dis-white;
-      position: absolute;
-      top: 50%;
-    }
-
-    &::before {
-      left: -183px;
-      }
-    &::after {
-      right: -183px;
-      }
+.form-item__title::before{
+  content: '';
+  position: absolute;
+  width: 57%;
+  height: 1px;
+  top: -20px;
+  left: -20px;
+  background-color: @dis-white;
+  @media (min-width:@tablet-width) {
+    width: 123px;
+    top: 50%;
+    left: -184px;
   }
   @media (min-width:@desktop-width) {
-    margin-bottom: 55px;
-    &::before,
-    &::after {
-      width: 280px;
-    }
+    width: 280px;
+    left: -323px;
   }
 }
 
-.form-item__title::before,
 .form-item__title::after {
+  content: '';
+  position: absolute;
+  width: 57%;
+  height: 1px;
+  top: -20px;
+  right: -20px;
+  background-color: @dis-white;
   @media (min-width:@tablet-width) {
-
+    width: 123px;
+    top: 50%;
+    right:-184px;
+  }
+  @media (min-width:@desktop-width) {
+    width: 280px;
+    right:-323px;
   }
 }
 
@@ -179,12 +165,6 @@
   }
 }
 
-// .form-item__input-wrapper {
-//   display:flex ;
-//   flex-direction: column;
-//   margin: auto;
-// }
-
 .form-item__item {
   margin-bottom: 20px;
 }
@@ -206,7 +186,6 @@
   font-family: 'PT Sans';
   line-height: 26px;
   font-size: 18px;
-  /* flex: 1; */
   width: 100%;
 }
 
@@ -218,11 +197,6 @@
   font-size: 14px;
   font-weight: 400;
 }
-
-
-/* .introduce-item__input {
-  flex: 1;
-} */
 
 .introduce-item__label-text {
   margin-right: 14px;
