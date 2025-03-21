@@ -53,7 +53,7 @@
 
   @media (min-width:@desktop-width) {
      /* grid-template-rows: 374px 207px 202px 347px; */
-     grid-template-rows: 2fr repeat(2,1fr) 2fr;
+     grid-template-rows: 294px repeat(2,1fr) 396px;
   }
 }
 
@@ -76,6 +76,9 @@
   } */
 }
 
+/*Надо переработать правило
+с псевдоэлементами из-за слишком большой вложенности
+и сложности читания правила !!!*/
 .review__form-item::before {
   content: '';
   position: absolute;
@@ -119,6 +122,17 @@
   }
   @media (min-width:@desktop-width) {
     margin-bottom: 55px;
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}
+
+.form-item__title::before,
+.form-item__title::after {
+  @media (min-width:@tablet-width) {
+
   }
 }
 
