@@ -28,6 +28,18 @@
   border: none;
  }
 
+ .impressions-item__option:hover::before {
+  background-color: @dis-white;
+ }
+
+ .impressions-item__option:active::before {
+  background-color: @gray;
+ }
+
+ .impressions-item__option:active::after {
+  opacity: 0.3;
+ }
+
  .impressions-item__input:checked+span::after {
   content: "";
   position: absolute;

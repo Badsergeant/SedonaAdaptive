@@ -187,6 +187,17 @@
   line-height: 26px;
   font-size: 18px;
   width: 100%;
+
+  &:hover:not(:focus) {
+    background-color: @dis-white;
+  }
+
+  &:focus{
+    background-color: @basic-white;
+    border: 4px solid @dis-white;
+    outline: none;
+
+  }
 }
 
 .form-item__item:last-child {
