@@ -25,6 +25,18 @@
   border-radius: 7px;
 }
 
+.attractions-item__option:hover::before {
+  background-color: @dis-white;
+ }
+
+ .attractions-item__option:active::before {
+  background-color: @gray;
+ }
+
+ .attractions-item__option:active::after {
+  opacity: 0.3;
+ }
+
 .attractions-item__input:checked + span::after {
   content: url(../../img/tick.svg);
   position: absolute;
