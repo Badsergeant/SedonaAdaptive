@@ -69,9 +69,21 @@
 }
 
 @media (min-width:@tablet-width) {
-  .main-nav__list-item:nth-child(2) {
-    margin-right: auto;
+  .main-nav__list-item {
+    min-width: 153px;
   }
+}
+
+@media (min-width:@desktop-width) {
+  .main-nav__list-item {
+    min-width: 239px;
+  }
+}
+
+@media (min-width:@tablet-width) {
+  .main-nav__list-item:nth-child(2) {
+  margin-right: 20.31%;
+ }
 }
 
 .main-nav__toggle {
