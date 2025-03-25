@@ -12,6 +12,7 @@
   .contacts-wrapper {
     flex-direction: row;
     justify-content: space-between;
+    gap: 78px;
   }
 }
 
@@ -37,13 +38,13 @@
 @media (min-width:@desktop-width) {
 
   /*Не уверен в правильности выполнения подобного эффекта но это пока всё ,что пришло в голову*/
-  .contacts-wrapper .item-contacts:nth-of-type(1) .item-contacts__label-text::before {
+  /* .contacts-wrapper .item-contacts:nth-of-type(1) .item-contacts__label-text::before {
     content: "";
     position: absolute;
     width: 90px;
     height: 30px;
     background-color: @basic-white;
-  }
+  } */
 
   .item-contacts__label-text {
     margin-right: 15px;
@@ -52,17 +53,23 @@
     align-items: center;
   }
 
-  .contacts-wrapper .item-contacts:nth-of-type(1) .item-contacts__label {
-    position: absolute;
-    left: -83px;
+@media (min-width:@desktop-width) {
+  .item-contacts__label-text-word {
+    display: none;
   }
 }
 
-.item-contacts__input {
+
+  /* .contacts-wrapper .item-contacts:nth-of-type(1) .item-contacts__label {
+    left: -83px;
+  } */
+}
+
+/* .item-contacts__input {
   @media (min-width:@desktop-width) {
     width: 258px;
   }
-}
+} */
 
 .item-contacts__label-mail,
 .item-contacts__label-tel {
@@ -79,7 +86,6 @@
 
   @media (min-width:@desktop-width) {
     top: 0;
-    right: 3px;
   }
 }
 
