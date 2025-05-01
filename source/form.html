@@ -11,7 +11,15 @@
 <body class="page__body">
   <div class="page__body-wrapper">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html"></a>
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)"
+         srcset="./img/logotype-desktop.svg.svg">
+        <source media="(min-width: 768px)"
+         srcset="./img/logotype-tablet.svg.svg">
+        <img src="./img/logotype-mobile.svg" width="101.6px" height="84px" alt="Логотип Седона">
+      </picture>
+    </a>
     <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">

@@ -11,7 +11,15 @@
 <body class="page__body page__body--secondary">
   <div class="page__body-wrapper">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html"></a>
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)"
+         srcset="./img/logotype-desktop.svg.svg">
+        <source media="(min-width: 768px)"
+         srcset="./img/logotype-tablet.svg.svg">
+        <img src="./img/logotype-mobile.svg" width="101.6px" height="84px" alt="Логотип Седона">
+      </picture>
+    </a>
     <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -66,8 +74,15 @@
         <ul class="authors-photo__list">
 
           <li class="authors-photo__item card">
-            <img class="card__image" src="./img/photo-1-desktop.jpg" width="280" height="280"
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="./img/photo-1-desktop@1x.jpg 1x, ./img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+              srcset="./img/photo-1-tablet@1x.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x">
+              <img class="card__image" src="./img/photo-1-mobile.jpg"
+              srcset="./img/photo-1-mobile@2x.jpg 2x"
               alt="Дорога на фоне заката">
+            </picture>
             <div class="card__wrapper-userinfo">
 
               <div class="card__wrapper-text">
@@ -93,8 +108,16 @@
           </li>
 
           <li class="authors-photo__item card">
-            <img class="card__image" src="./img/photo-2-mobile.jpg" width="280" height="280"
+            <picture>
+            <source media="(min-width:1280px)"
+            srcset="./img/photo-2-desktop.jpg 1x, ./img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)"
+            srcset="./img/photo-2-tablet.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x">
+            <img class="card__image"
+            src="./img/photo-2-mobile.jpg" width="280" height="280"
+            srcset="./img/photo-2-mobile@2x.jpg 2x"
               alt="Цветущий кактус на фоне местных гор">
+            </picture>
             <div class="card__wrapper-userinfo">
 
               <div class="card__wrapper-text">
@@ -120,8 +143,15 @@
           </li>
 
           <li class="authors-photo__item card">
+            <picture>
+              <source media="(min-width:1280px)"
+               srcset="./img/photo3/photo-3-desktop.jpg 1x, ./img/photo3/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)"
+               srcset="./img/photo3/photo-3-tablet.jpg 1x, ./img/photo3/photo-3-tablet@2x.jpg 2x">
             <img class="card__image" src="./img/photo-3-mobile.jpg" width="280" height="280"
+              srcset="./img/photo3/photo-3-mobile@2x.jpg 2x"
               alt="Извилистая дорога через лес у подножия горы">
+            </picture>
             <div class="card__wrapper-userinfo">
 
               <div class="card__wrapper-text">
@@ -147,8 +177,16 @@
           </li>
 
           <li class="authors-photo__item card">
-            <img class="card__image" src="/img/photo-4-desktop 1.jpg" width="280" height="280"
-              alt="Каменный мост на фоне гор">
+            <picture>
+              <source media="(min-width:1280px)"
+               srcset="./img/photo4/photo-4-desktop.jpg 1x, ./img/photo4/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)"
+               srcset="./img/photo4/photo-4-tablet.jpg 1x, ./img/photo4/photo-4-tablet@2x.jpg 2x">
+            <img class="card__image"
+             src="./img/photo4/photo-4-mobile.jpg" width="280" height="280"
+             srcset="./img/photo4/photo-4-mobile@2x.jpg 2x"
+             alt="Каменный мост на фоне гор">
+            </picture>
             <div class="card__wrapper-userinfo">
 
               <div class="card__wrapper-text">
@@ -188,7 +226,16 @@
           в очередной раз!
         </p>
         <article class="presentation__video-content video-player">
-          <img class="video-player__img" src="./img/video-mobile.svg" alt="Автомобили на дороге на фоне гор">
+          <picture>
+            <source media="(min-width:1280px)"
+             srcset="./img/video-photo/video-desktop.jpg 1x, ./img/video-photo/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)"
+             srcset="./img/video-photo/video-tablet.jpg 1x, ./img/video-photo/video-tablet@2x.jpg 2x">
+          <img class="video-player__img"
+           src="./img/video-photo/video-mobile.jpg"
+           srcset="./img/video-photo/video-mobile@2x.jpg 2x"
+           alt="Автомобили на дороге на фоне гор">
+          </picture>
 
           <div class="video-player__controls">
 
