@@ -76,7 +76,20 @@
   position: relative;
 }
 
-.item-contacts__label-mail::before {
+.item-contacts-ico {
+ width: 58px;
+ height: 58px;
+ padding: 20px;
+ background-color: @contacts-ico-gray;
+ position: absolute;
+ top: 26px;
+ right: 0px;
+ @media (min-width:@desktop-width) {
+  top: 0;
+ }
+}
+
+/* .item-contacts__label-mail::before {
   content: url(../../img/mail-ico.svg);
   position: absolute;
   top: 26px;
@@ -87,9 +100,9 @@
   @media (min-width:@desktop-width) {
     top: 0;
   }
-}
+} */
 
-.item-contacts__label-tel::before {
+/* .item-contacts__label-tel::before {
   content: url(../../img/mobile-ico.svg);
   position: absolute;
   top: 26px;
@@ -100,7 +113,7 @@
   @media (min-width:@desktop-width) {
     top: 0;
   }
-}
+} */
 
 
 /* .item-contacts__input {
