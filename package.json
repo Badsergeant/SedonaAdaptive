@@ -37,5 +37,8 @@
   ],
   "engines": {
     "node": ">=12 || >=14"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001727"
   }
 }
